@@ -1,0 +1,16 @@
+com/hastega/review/userlibrary/service/UserService.class
+com/hastega/review/userlibrary/service/LoginService.class
+com/hastega/review/userlibrary/service/UserBookService.class
+com/hastega/review/userlibrary/persistance/UserRepository.class
+com/hastega/review/userlibrary/persistance/UserEntity.class
+com/hastega/review/userlibrary/UserLibraryApplication.class
+com/hastega/review/userlibrary/models/UserDTO.class
+com/hastega/review/userlibrary/persistance/UserBookRepository.class
+com/hastega/review/userlibrary/controller/TokenController.class
+com/hastega/review/userlibrary/models/BookDTO.class
+com/hastega/review/userlibrary/auth/JwtRequestFilter.class
+com/hastega/review/userlibrary/controller/LibraryController.class
+com/hastega/review/userlibrary/persistance/UserBookEntity.class
+com/hastega/review/userlibrary/Utils.class
+com/hastega/review/userlibrary/persistance/BookID.class
+com/hastega/review/userlibrary/service/JwtTokenService.class

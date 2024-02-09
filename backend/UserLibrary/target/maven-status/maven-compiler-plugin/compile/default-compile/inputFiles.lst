@@ -1,0 +1,16 @@
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/service/UserBookService.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/controller/LibraryController.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/persistance/UserBookEntity.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/UserLibraryApplication.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/models/UserDTO.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/models/BookDTO.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/service/JwtTokenService.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/Utils.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/persistance/UserEntity.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/persistance/UserBookRepository.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/persistance/UserRepository.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/service/UserService.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/controller/TokenController.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/auth/JwtRequestFilter.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/persistance/BookID.java
+/home/dave/src/hastega/review/backend/UserLibrary/src/main/java/com/hastega/review/userlibrary/service/LoginService.java
