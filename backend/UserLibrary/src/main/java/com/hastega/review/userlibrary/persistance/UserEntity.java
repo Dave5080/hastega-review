@@ -65,7 +65,7 @@ public class UserEntity {
         if(dto.getEmail() != null)
             this.setEmail(dto.getEmail());
         if(dto.getPassword() != null)
-            this.setP_hash(dto.getPassword());
+            this.setP_hash(Utils.getHash(dto.getPassword()));
         return this;
     }
 }

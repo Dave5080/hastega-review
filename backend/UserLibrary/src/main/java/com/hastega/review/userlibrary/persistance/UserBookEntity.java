@@ -23,6 +23,7 @@ public class UserBookEntity {
     public UserBookEntity(){}
 
     public UserBookEntity(BookDTO dto){
+        this.bookId = new BookID(dto.getISBN(), dto.getUserId());
         this.update(dto);
     }
 
@@ -77,10 +78,9 @@ public class UserBookEntity {
         this.letture = letture;
     }
     public UserBookEntity update(BookDTO dto){
+        if(dto.getISBN() != null) this.bookId.setISBN(dto.getISBN());
         if(dto.getTitolo() != null) this.setTitolo(dto.getTitolo());
         if(dto.getAutore() != null) this.setAutore(dto.getAutore());
-        if(dto.getAdd_date() != null) this.setAdd_date(dto.getAdd_date());
-        if(dto.getDel_date() != null) this.setDel_date(dto.getDel_date());
         if(dto.getTrama() != null) this.setTrama(dto.getTrama());
         if(dto.getLetture() != null) this.setLetture(dto.getLetture());
         return this;

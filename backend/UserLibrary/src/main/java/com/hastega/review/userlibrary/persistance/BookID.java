@@ -18,6 +18,10 @@ public class BookID implements Serializable {
         this(ISBN, userID);
     }
 
+    public BookID() {
+
+    }
+
     public String getISBN() {
         return ISBN;
     }

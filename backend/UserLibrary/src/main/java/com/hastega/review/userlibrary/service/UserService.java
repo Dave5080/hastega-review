@@ -4,6 +4,7 @@ import com.hastega.review.userlibrary.models.UserDTO;
 import com.hastega.review.userlibrary.persistance.UserEntity;
 import com.hastega.review.userlibrary.persistance.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
 

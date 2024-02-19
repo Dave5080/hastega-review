@@ -5,6 +5,8 @@ import com.hastega.review.userlibrary.persistance.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -41,6 +43,7 @@ public class UserBookService {
     public Optional<UserBookEntity> insertNewUserBook(BookDTO dto){
         Optional<UserBookEntity> insertedBook;
         UserBookEntity newBook = new UserBookEntity(dto);
+        newBook.setAdd_date(Timestamp.from(Instant.now()));
         insertedBook = Optional.of(userBookRepository.saveAndFlush(newBook));
         return insertedBook;
     }
@@ -56,7 +59,10 @@ public class UserBookService {
 
     public Optional<UserBookEntity> deleteUserBook(BookID bookID){
         Optional<UserBookEntity> book = getUserBookById(bookID);
-        book.ifPresent(userBookEntity -> userBookRepository.delete(userBookEntity));
+        if(book.isPresent()){
+            book.get().setDel_date(Timestamp.from(Instant.now()));
+            book = Optional.of(userBookRepository.saveAndFlush(book.get()));
+        }
         return book;
     }
 

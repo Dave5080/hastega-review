@@ -11,18 +11,14 @@ public class BookDTO {
     private Integer userId;
     private String titolo;
     private String autore;
-    private Timestamp add_date;
-    private Timestamp del_date;
     private String trama;
     private Integer letture;
 
-    public BookDTO(String ISBN, Integer userId, String titolo, String autore, Timestamp add_date, Timestamp del_date, String trama, Integer letture){
+    public BookDTO(String ISBN, Integer userId, String titolo, String autore, String trama, Integer letture){
         setISBN(ISBN);
         setUserId(userId);
         setAutore(autore);
         setTitolo(titolo);
-        setAdd_date(add_date);
-        setDel_date(del_date);
         setTrama(trama);
         setLetture(letture);
     }
@@ -70,22 +66,6 @@ public class BookDTO {
         this.autore = autore;
     }
 
-    public Timestamp getAdd_date() {
-        return add_date;
-    }
-
-    public void setAdd_date(Timestamp add_date) {
-        this.add_date = add_date;
-    }
-
-    public Timestamp getDel_date() {
-        return del_date;
-    }
-
-    public void setDel_date(Timestamp del_date) {
-        this.del_date = del_date;
-    }
-
     public String getTrama() {
         return trama;
     }
@@ -100,5 +80,10 @@ public class BookDTO {
 
     public void setLetture(Integer letture) {
         this.letture = letture;
+    }
+
+    public String toString(){
+        return String.format("{ISBN: %s, userId: %d, titolo: %s, autore: %s, trama: %s, letture: %d }",
+                getISBN(), getUserId(),getTitolo(), getAutore(), getTrama(), getLetture());
     }
 }
